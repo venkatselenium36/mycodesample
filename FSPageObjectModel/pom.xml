@@ -1,0 +1,340 @@
+<!-- <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>FASHSelect</groupId>
+  <artifactId>FSPageObjectModel</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>FSPageObjectModel</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+ -->
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>FreeCrmBddFramwork</groupId>
+  <artifactId>FreeCrmBddFramwork</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>FreeCrmBddFramwork</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <cucumber.version>1.2.5</cucumber.version>
+    
+    <maven.test.skip>false</maven.test.skip>
+    <java.home>C:\Program Files/ava/jdk-15.0.2/bin/javac</java.home>
+  </properties>
+
+
+
+<build>
+<pluginManagement>
+<plugins>
+
+ <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                <configuration>
+                      <verbose>true</verbose>
+                      <fork>true</fork>
+                      <executable>${java.home}</executable>
+                   <compilerVersion>1.8</compilerVersion>
+                   <source>1.8</source>
+                   <target>1.8</target>
+                 </configuration>
+             </plugin>
+
+
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+               <source>1.8</source>
+               <target>1.8</target>
+            </configuration>
+</plugin>
+<plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+     <artifactId>maven-surefire-plugin</artifactId>
+         <version>3.0.0-M5</version>
+             <configuration>
+			      <suiteXmlFile></suiteXmlFile>
+	      </configuration>
+</plugin>
+<plugin>
+ 	<groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-source-plugin</artifactId>
+       <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>  
+          </execution>
+       </executions>
+</plugin>
+<plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+</plugin>
+   
+             
+                
+            </plugins>
+  </pluginManagement>
+</build>
+    
+
+
+<dependencies>
+ 
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>${cucumber.version}</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency>
+  
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>2.0.0</version>
+</dependency>
+  
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency>
+<dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-core</artifactId>
+        <version>1.2.6</version>
+        <scope>test</scope>
+    </dependency>
+    
+ <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency>
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+<!-- 
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>3.0.0</version>
+    <type>pom</type>
+</dependency>
+ -->
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>4.2.0</version>
+    <type>pom</type>
+</dependency>
+ <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+ 
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+    <scope>test</scope>
+</dependency>
+
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+
+<!-- <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>6.10.2</version>
+    <scope>test</scope>
+</dependency>
+  --> 
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.6</version>
+    <scope>pom</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm-deps -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-jvm-deps</artifactId>
+    <version>1.0.5</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm-deps</artifactId>
+    <version>1.0.6</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+<dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>cucumber-reporting</artifactId>
+    <version>5.5.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>2.12.2</version>
+    <scope>provided</scope>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit-dep</artifactId>
+    <version>4.8.2</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+ 
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.0.0-beta-1</version>
+</dependency>
+ 
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+ 
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.10</version>
+   <!--  <version>7.3.0</version>  -->
+    <scope>compile</scope>
+</dependency>
+    
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.6.2</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+
+
+
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<dependency>
+  <groupId>commons-io</groupId>
+  <artifactId>commons-io</artifactId>
+  <version>2.6</version>
+</dependency>
+
+
+<!--  ps://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml-schemas</artifactId>
+    <version>4.1.1</version>
+</dependency>
+
+
+<!--  ps://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-scratchpad</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.apache.poi/openxml4j   -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>openxml4j</artifactId>
+    <version>1.0-beta</version>
+</dependency>
+
+ 
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.14.1</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.14.1</version>
+  </dependency>
+
+ 
+<dependency>
+<groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.0.9</version>
+</dependency>
+    
+  </dependencies>
+</project>
+
+ 
+ 
+
+ 

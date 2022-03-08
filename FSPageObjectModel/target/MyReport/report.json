@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "validate Free CRM Tasks Page Test",
+        "description": "",
+        "id": "freecrm-app-testing;validate-free-crm-tasks-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5644578115,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user opens browser",
+            "match": {
+              "location": "HomePageStepDefination.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4719639814,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on login page",
+            "match": {
+              "location": "HomePageStepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5299154845,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user logs into app",
+            "match": {
+              "location": "HomePageStepDefination.user_logs_into_app()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1005446319,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate home page title",
+            "match": {
+              "location": "HomePageStepDefination.validate_home_page_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 896825325,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate logged in user",
+            "match": {
+              "location": "HomePageStepDefination.validate_logged_in_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7395696831,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on task link",
+            "match": {
+              "location": "TaskStepDefination.click_on_task_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23585977447,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "create new task",
+            "match": {
+              "location": "TaskStepDefination.create_new_task()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "FreeCRM App Testing",
+    "description": "",
+    "id": "freecrm-app-testing",
+    "keyword": "Feature",
+    "uri": "task.feature"
+  }
+]
